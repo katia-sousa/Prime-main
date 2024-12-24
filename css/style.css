@@ -736,4 +736,10 @@ iframe{
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+/* Ocultar o mapa em telas pequenas */
+@media (max-width: 768px) {
+  .footer-section iframe {
+    display: none;
+  }
+}
 }
