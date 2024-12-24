@@ -121,6 +121,11 @@ function formatarValor(input) {
   // Atualiza o valor no campo
   input.value = valor;
 }
+// Função para alternar o menu
+function toggleMenu() {
+  const menu = document.querySelector('.list-items');
+  menu.classList.toggle('show'); // Alterna a classe que exibe/oculta o menu
+}
 // Escutando o evento de envio do formulário
 document.getElementById("myForm").addEventListener("submit", async function (event) {
   event.preventDefault();
