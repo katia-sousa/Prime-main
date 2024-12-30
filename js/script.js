@@ -1,4 +1,5 @@
 
+
 const controls = document.querySelectorAll(".control");
 let currentItem = 0;
 const items = document.querySelectorAll(".item-carrossel");
@@ -33,20 +34,7 @@ controls.forEach((control) => {
     items[currentItem].classList.add("current-item");
   });
 });
-/*document.addEventListener("DOMContentLoaded", function () {
-  var video = document.getElementById("myVideo");
-  var text = document.getElementById("myText");
 
-  // Defina o tempo em que deseja alterar a cor (em segundos)
-  var tempoParaMudarCor = 4; // por exemplo, 5 segundos
-
-  video.addEventListener("timeupdate", function () {
-    if (video.currentTime >= tempoParaMudarCor) {
-      text.style.color = " #676c72"; // mude para a cor desejada
-   // }else{text.style.color = "white";}
-  });
-});
-*/
 document.addEventListener('DOMContentLoaded', function() {
   const section = document.getElementById('quem-somos');
   let triggerHeight = 250; // Altura em pixels a partir do topo da página para acionar a animação
@@ -126,27 +114,3 @@ function toggleMenu() {
   const menu = document.querySelector('.list-items');
   menu.classList.toggle('show'); // Alterna a classe que exibe/oculta o menu
 }
-// Escutando o evento de envio do formulário
-document.getElementById("myForm").addEventListener("submit", async function (event) {
-  event.preventDefault();
-
-  const formData = {
-      cep: document.getElementById("cep").value,
-      logradouro: document.getElementById("logradouro").value,
-      numero: document.getElementById("numero").value,
-      uf: document.getElementById("uf").value,
-      bairro: document.getElementById("bairro").value,
-      localidade: document.getElementById("localidade").value,
-      valorContaLuz: document.getElementById("valorContaLuz").value,
-      email: document.getElementById("email").value,
-  };
-
-  try {
-      // Adicionando os dados na coleção "orcamentos"
-      await addDoc(collection(db, "orcamentos"), formData);
-      alert("Informações salvas com sucesso!");
-  } catch (error) {
-      console.error("Erro ao salvar informações:", error);
-      alert("Erro ao salvar as informações. Verifique o console para mais detalhes.");
-  }
-});

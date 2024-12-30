@@ -190,7 +190,7 @@ header {
   position: relative;
   top: 22%;
   width: 360px;
-  height: 490px;
+  height: 530px;
   background-color: var(--cor-branca);
   border-radius: 20px;
 }
@@ -213,11 +213,11 @@ header {
       .inlineFields {
         display: flex;
         align-items: baseline;
-        margin-bottom: 10px; /* Ajuste conforme necessário */
+        margin-bottom: 10px;
       }
       
       .menorEspaco {
-        margin-right: 10px; /* Ajuste conforme necessário */       
+        margin-right: 10px;    
       }
 form {
     margin: 0 auto;
