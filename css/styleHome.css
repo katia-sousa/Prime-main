@@ -78,6 +78,11 @@ h1 {
 
 /* Responsividade */
 @media (max-width: 992px) {
+
+  .parallax {
+    height: 50vh;
+  }
+  
   .text {
       position: absolute;
       text-align: center;
@@ -96,6 +101,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
+
+  .parallax {
+    height: 50vh;
+  }
   .footer {
       grid-template-columns: repeat(2, 1fr);
   }
