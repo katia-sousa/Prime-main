@@ -140,17 +140,19 @@ h1 {
 /* Media Queries para telas menores */
 @media (max-width: 768px) {
   .parallax {
-    background-attachment: scroll; /* Desativa o efeito parallax em telas menores */
-    background-size: 100% auto; /* Ajusta a imagem para não cortar nas telas menores */
-    height: 80vh; /* Reduz a altura para não ocupar tanto espaço vertical */
+    background-attachment: fixed; /* Mantém o parallax nas telas menores */
+    background-position: center;
+    background-size: cover;
+    height: 100vh; /* Mantém a altura da tela cheia */
   }
 }
 
 @media (max-width: 480px) {
   .parallax {
-    background-attachment: scroll; /* Desativa o efeito parallax em telas pequenas */
-    background-size: 100% auto; /* Ajusta a imagem para não cortar */
-    height: 60vh; /* Reduz ainda mais a altura da imagem para telas muito pequenas */
+    background-attachment: fixed; /* Efeito parallax nas telas pequenas */
+    background-position: center;
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    height: 100vh; /* Altura completa da tela, mas sem espaço em branco */
   }
 }
 }
