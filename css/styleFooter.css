@@ -16,6 +16,7 @@
   margin: 0;
   overflow: hidden;
   align-items: center;
+  justify-content: center; /* Centraliza o conteúdo no eixo horizontal */
 }
 
 .footer-section {
@@ -27,6 +28,7 @@
   justify-content: flex-start;
   height: 100%;
   align-self: start;
+  width: 100%; /* Garante que as seções ocupem toda a largura */
 }
 
 .footer-section h4 {
@@ -35,6 +37,7 @@
   font-size: 1.2rem;
   border-bottom: 2px solid var(--cor-azul);
   padding-bottom: 5px;
+  text-align: left; /* Alinha o título à esquerda */
 }
 
 .footer-section ul {
@@ -76,17 +79,19 @@
 @media (max-width: 768px) {
   .footer {
     grid-template-columns: repeat(2, 1fr); /* Alterando para 2 colunas */
+    padding: 20px; /* Ajustando o padding para telas menores */
   }
 
-  /* Ajustando o tamanho da fonte nas telas médias */
   .footer-section h4 {
     font-size: 1rem;
+    text-align: center; /* Centralizando o título */
   }
 
   .footer-section p {
     font-size: 0.8rem; /* Diminuindo o tamanho da fonte dos parágrafos */
+    text-align: center; /* Centralizando o parágrafo */
   }
-  
+
   .benefits-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -95,19 +100,20 @@
 @media (max-width: 480px) {
   .footer {
     grid-template-columns: 1fr; /* Alterando para uma coluna */
-    text-align: center;
+    text-align: center; /* Centralizando o conteúdo no rodapé */
   }
 
   .footer-section {
     align-items: center;
   }
 
-  /* Ajustando o tamanho da fonte nas telas pequenas */
   .footer-section h4 {
     font-size: 0.9rem;
+    text-align: center; /* Centralizando o título */
   }
 
   .footer-section p {
     font-size: 0.75rem; /* Diminuindo ainda mais o tamanho da fonte */
+    text-align: center; /* Centralizando o parágrafo */
   }
 }
