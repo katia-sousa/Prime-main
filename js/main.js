@@ -27,7 +27,6 @@ btnSubscribe.addEventListener('click', async () =>{
   }
   //salvar
   const formId = await form(subscription)
-  console.log('cadastrado com sucesso: ${subscription')
 
     cep.value = '',
     logradouro.value = '',
