@@ -28,6 +28,16 @@ btnSubscribe.addEventListener('click', async () =>{
   //salvar
   const formId = await form(subscription)
   console.log('cadastrado com sucesso: ${subscription')
+
+    cep.value = '',
+    logradouro.value = '',
+    numero.value = '',
+    uf.value = '',
+    bairro.value = '',
+    localidade.value = '',
+    valorContaLuz.value = '',
+    email.value = '',
+    telefone.value = ''
 });
 //debbuger
 
