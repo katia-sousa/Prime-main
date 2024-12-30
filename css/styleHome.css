@@ -143,7 +143,7 @@ h1 {
     background-attachment: fixed; /* Mantém o parallax nas telas menores */
     background-position: center;
     background-size: cover;
-    height: 100vh; /* Mantém a altura da tela cheia */
+    height: 50vh; /* Mantém a altura da tela cheia */
   }
 }
 
@@ -152,7 +152,7 @@ h1 {
     background-attachment: fixed; /* Efeito parallax nas telas pequenas */
     background-position: center;
     background-size: cover; /* Ajusta o tamanho da imagem */
-    height: 100vh; /* Altura completa da tela, mas sem espaço em branco */
+    height: 50vh; /* Altura completa da tela, mas sem espaço em branco */
   }
 }
 }
