@@ -137,17 +137,20 @@ h1 {
   .ofertas {
       flex-direction: column-reverse;
   }
-  /* Media Queries para telas menores */
+/* Media Queries para telas menores */
 @media (max-width: 768px) {
   .parallax {
-    background-size: 150%; /* Aumenta o tamanho da imagem para telas médias */
+    background-attachment: scroll; /* Desativa o efeito parallax em telas menores */
+    background-size: 100% auto; /* Ajusta a imagem para não cortar nas telas menores */
+    height: 80vh; /* Reduz a altura para não ocupar tanto espaço vertical */
   }
 }
 
 @media (max-width: 480px) {
   .parallax {
-    background-size: 200%; /* Aumenta ainda mais para telas pequenas */
-    background-position: top center; /* Ajusta a posição da imagem para telas pequenas */
+    background-attachment: scroll; /* Desativa o efeito parallax em telas pequenas */
+    background-size: 100% auto; /* Ajusta a imagem para não cortar */
+    height: 60vh; /* Reduz ainda mais a altura da imagem para telas muito pequenas */
   }
 }
 }
