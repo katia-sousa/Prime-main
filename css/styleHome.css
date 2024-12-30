@@ -79,10 +79,6 @@ h1 {
 /* Responsividade */
 @media (max-width: 992px) {
 
-  .parallax {
-    height: 50vh;
-  }
-  
   .text {
       position: absolute;
       text-align: center;
@@ -102,9 +98,6 @@ h1 {
 
 @media (max-width: 768px) {
 
-  .parallax {
-    height: 50vh;
-  }
   .footer {
       grid-template-columns: repeat(2, 1fr);
   }
@@ -116,9 +109,6 @@ h1 {
 
 @media (max-width: 480px) {
 
-  .parallax {
-    height: 50vh;
-  }
   .footer {
       grid-template-columns: 1fr;
       text-align: center;
@@ -147,4 +137,17 @@ h1 {
   .ofertas {
       flex-direction: column-reverse;
   }
+  /* Media Queries para telas menores */
+@media (max-width: 768px) {
+  .parallax {
+    background-size: 150%; /* Aumenta o tamanho da imagem para telas médias */
+  }
+}
+
+@media (max-width: 480px) {
+  .parallax {
+    background-size: 200%; /* Aumenta ainda mais para telas pequenas */
+    background-position: top center; /* Ajusta a posição da imagem para telas pequenas */
+  }
+}
 }
