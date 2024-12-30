@@ -83,12 +83,12 @@
   }
 
   .footer-section h4 {
-    font-size: 1rem;
+    font-size: 1rem; /* Reduzindo ainda mais o título */
     text-align: center; /* Centralizando o título */
   }
 
   .footer-section p {
-    font-size: 0.8rem; /* Diminuindo o tamanho da fonte dos parágrafos */
+    font-size: 0.75rem; /* Reduzindo ainda mais o tamanho da fonte dos parágrafos */
     text-align: center; /* Centralizando o parágrafo */
   }
 
@@ -108,12 +108,12 @@
   }
 
   .footer-section h4 {
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Diminuição ainda maior do tamanho do título */
     text-align: center; /* Centralizando o título */
   }
 
   .footer-section p {
-    font-size: 0.75rem; /* Diminuindo ainda mais o tamanho da fonte */
+    font-size: 0.65rem; /* Fontes ainda menores nos parágrafos */
     text-align: center; /* Centralizando o parágrafo */
   }
 }
