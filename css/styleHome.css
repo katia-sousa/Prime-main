@@ -108,7 +108,7 @@ h1 {
 @media (max-width: 480px) {
 
   .parallax {
-    height: 80vh;
+    height: 50vh;
   }
   .footer {
       grid-template-columns: 1fr;
