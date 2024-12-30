@@ -28,14 +28,14 @@ btnSubscribe.addEventListener('click', async () =>{
   //salvar
   const formId = await form(subscription)
 
-    cep.value = '',
-    logradouro.value = '',
-    numero.value = '',
-    uf.value = '',
-    bairro.value = '',
-    localidade.value = '',
-    valorContaLuz.value = '',
-    email.value = '',
+    cep.value = ''
+    logradouro.value = ''
+    numero.value = ''
+    uf.value = ''
+    bairro.value = ''
+    localidade.value = ''
+    valorContaLuz.value = ''
+    email.value = ''
     telefone.value = ''
 });
 //debbuger
