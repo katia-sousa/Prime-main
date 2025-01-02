@@ -11,6 +11,7 @@ const localidade = document.getElementById('localidade')
 const valorContaLuz = document.getElementById('valorContaLuz')
 const email = document.getElementById('email')
 const telefone = document.getElementById('telefone')
+const nome = document.getElementById('nome')
 const btnSubscribe = document.getElementById('btnSubscribe')
 
 btnSubscribe.addEventListener('click', async () => {
@@ -23,7 +24,8 @@ btnSubscribe.addEventListener('click', async () => {
       localidade: localidade.value,
       valorContaLuz: valorContaLuz.value,
       email: email.value,
-      telefone: telefone.value
+      telefone: telefone.value,
+      nome: nome.value
     };
   
     try {
@@ -40,6 +42,7 @@ btnSubscribe.addEventListener('click', async () => {
       valorContaLuz.value = '';
       email.value = '';
       telefone.value = '';
+      nome: nome.value = '';
 
         //alert
       alert('Dados salvos com sucesso!');

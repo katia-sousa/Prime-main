@@ -217,7 +217,7 @@ header {
     background-image: url("../images/primeprojetossustentaveis.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 650px;
+    height: 700px;
     background-position-y: center;
     border: solid var(--cor-branca);
 }
@@ -225,9 +225,9 @@ header {
 .envolta{
   margin: 0 auto;
   position: relative;
-  top: 22%;
+  top: 15%;
   width: 360px;
-  height: 530px;
+  height: 600px;
   background-color: var(--cor-branca);
   border-radius: 20px;
 }

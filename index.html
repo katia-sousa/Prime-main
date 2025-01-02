@@ -44,37 +44,46 @@
                       </div>
                     <div class="text-orçamento">FAÇA SEU ORÇAMENTO!</div>
                     <form id="myForm">
+                        <!-- Campo Nome -->
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                      
+                        <!-- Campo CEP -->
                         <label for="cep">CEP:</label>
-                        <input type="text" id="cep" name="cep" maxlength="8" oninput="buscarEndereco(this.value)" required>
-                        <!-- Adicione esses campos ao formulário -->
+                        <input type="text" id="cep" name="cep" maxlength="8" oninput="processarCEP(this)" required>
+                      
                         <label for="logradouro">Rua:</label>
-                        <input type="text" id="logradouro" name="logradouro" readonly>
-        
+                        <input type="text" id="logradouro" name="logradouro" onblur="buscarCEP()">
+                      
                         <div class="inlineFields">
-                            <label for="numero" class="menorEspaco">Número:</label>
-                            <input type="number" id="numero" name="numero" class="menorEspaco">
-                            <label for="uf" class="menorEspaco">Estado:</label>
-                            <input type="text" id="uf" name="uf" readonly class="menorEspaco">
-                          </div>
-                    
+                          <!-- Campo Número -->
+                          <label for="numero" class="menorEspaco">Número:</label>
+                          <input type="number" id="numero" name="numero" class="menorEspaco">
+                      
+                          <!-- Campo Estado -->
+                          <label for="uf" class="menorEspaco">Estado:</label>
+                          <input type="text" id="uf" name="uf" maxlength="2">
+                        </div>
+                      
                         <label for="bairro">Bairro:</label>
-                        <input type="text" id="bairro" name="bairro" readonly>
-        
+                        <input type="text" id="bairro" name="bairro" onblur="buscarCEP()">
+                      
                         <label for="localidade">Cidade:</label>
-                        <input type="text" id="localidade" name="localidade" readonly>
-        
+                        <input type="text" id="localidade" name="localidade" onblur="buscarCEP()">
+                      
                         <label for="valorContaLuz">Valor da Conta de Luz:</label>
                         <input type="text" id="valorContaLuz" name="valorContaLuz" oninput="formatarValor(this)" required>
-                    
+                      
                         <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone"  pattern="[0-9]{10,11}" name="telefone" required>
-
+                        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" onblur="validarTelefone(this)" required>
+                      
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                    
-                        <button type="button"id="btnSubscribe">ENVIAR</button>
-                        
+                        <input type="email" id="email" name="email" onblur="validarEmail(this)" required>
+                      
+                        <button type="button" id="btnSubscribe">ENVIAR</button>
                       </form>
+                      
+                      
                 </div>
                
             </div>
