@@ -1,31 +1,33 @@
 
 
 import { form } from './form.js'
-
+const nome = document.getElementById('nome')
 const cep = document.getElementById('cep')
 const logradouro = document.getElementById('logradouro')
 const numero = document.getElementById('numero')
 const uf = document.getElementById('uf')
 const bairro = document.getElementById('bairro')
 const localidade = document.getElementById('localidade')
+const complemento = document.getElementById('complemento')
 const valorContaLuz = document.getElementById('valorContaLuz')
 const email = document.getElementById('email')
 const telefone = document.getElementById('telefone')
-const nome = document.getElementById('nome')
 const btnSubscribe = document.getElementById('btnSubscribe')
 
 btnSubscribe.addEventListener('click', async () => {
     const subscription = {
+      nome: nome.value,
       cep: cep.value,
       logradouro: logradouro.value,
       numero: numero.value,
       uf: uf.value,
       bairro: bairro.value,
       localidade: localidade.value,
+      complemento: complemento.value,
       valorContaLuz: valorContaLuz.value,
       email: email.value,
       telefone: telefone.value,
-      nome: nome.value
+      
     };
   
     try {
@@ -42,7 +44,8 @@ btnSubscribe.addEventListener('click', async () => {
       valorContaLuz.value = '';
       email.value = '';
       telefone.value = '';
-      nome: nome.value = '';
+      nome.value = '';
+      complemento.value = '';
 
         //alert
       alert('Dados salvos com sucesso!');

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif; /* Títulos */
+    
 }
 :root {
   --cor-azul: #007BFF;
@@ -42,6 +43,12 @@ header {
   .flex-container {
     display: flex;
     align-items: center;
+
+  }
+  .flex-container p {
+    font-size: 1rem;
+    padding: 6%;
+    margin-top: 0px;
 
   }
   
@@ -217,7 +224,7 @@ header {
     background-image: url("../images/primeprojetossustentaveis.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 750px;
     background-position-y: center;
     border: solid var(--cor-branca);
 }
@@ -227,7 +234,7 @@ header {
   position: relative;
   top: 15%;
   width: 360px;
-  height: 600px;
+  height: 650px;
   background-color: var(--cor-branca);
   border-radius: 20px;
 }
