@@ -146,8 +146,3 @@ function validarEmail(input) {
 }
 
 
-// Função para alternar o menu
-function toggleMenu() {
-  const menu = document.querySelector('.list-items');
-  menu.classList.toggle('show'); // Alterna a classe que exibe/oculta o menu
-}
