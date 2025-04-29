@@ -702,11 +702,7 @@ ul li {
   max-width: 55%;
 }
 
-.simulador-imagem {
-  display: flex;
-  flex-direction: column; /* empilha as imagens verticalmente */
-  align-items: center;     /* centraliza horizontalmente */
-}
+
 
 
 .simulador-imagem img {
